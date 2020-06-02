@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.css"
+      integrity="sha256-ECB9bbROLGm8wOoEbHcHRxlHgzGqYpDtNTgDTyDz0wg="
+      crossorigin="anonymous"
+    />
+    <title>Number Guesser</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        background-image: url("img2.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+      }
+
+      div.container {
+        align-items: center;
+        background: rgba(27, 104, 139, 0.918);
+        border-radius: 5px;
+        width: 500px;
+        padding: 3rem 0 3rem 0;
+      }
+
+      .container h1 {
+        color: #eee;
+      }
+
+      div#game p.par-1 {
+        color: #eee;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Number Guesser</h1>
+      <div id="game">
+        <p class="par-1">
+          Guess a number between <span class="min-num"></span> and
+          <span class="max-num"></span>
+        </p>
+        <input
+          type="number"
+          id="guess-input"
+          placeholder="Enter your guess..."
+        />
+        <input
+          type="submit"
+          value="Submit"
+          id="guess-btn"
+          style="color: #eee;"
+        />
+        <p class="message" style="color: #eee;"></p>
+      </div>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>
